@@ -5,7 +5,11 @@ export interface TodoProps {
 }
 
 const Todo = ({ id, title, done }: TodoProps) => {
-  return <div>{id}{title}{done}</div>;
+  return (
+    <div>
+      {id} {title} {done}
+    </div>
+  );
 };
 
 export default Todo;
