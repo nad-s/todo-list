@@ -5,7 +5,7 @@ export interface TodoProps {
 }
 
 const Todo = ({ id, title, done }: TodoProps) => {
-  return <div>{title}</div>;
+  return <div>{id}{title}{done}</div>;
 };
 
 export default Todo;
