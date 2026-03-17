@@ -11,6 +11,7 @@ function App() {
   const [newTodo, setNewTodo] = useState("");
 
   const handleAdd = () => {
+    if (newTodo.trim() === "") return;
     setTodos([...todos, { id: todos.length + 1, title: newTodo, done: false }]);
     setNewTodo("");
   };
