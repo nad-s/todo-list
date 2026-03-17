@@ -4,10 +4,11 @@ export interface TodoProps {
   done: boolean;
 }
 
-const Todo = ({ id, title, done }: TodoProps) => {
+const Todo = ({ title }: TodoProps) => {
   return (
     <div>
-      {id} {title} {done}
+      {title}
+      <hr />
     </div>
   );
 };
